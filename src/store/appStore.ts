@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import type { CategoryGroup, FilterState, PlannedRoute } from '../types';
+import type { FilterState, PlannedRoute } from '../types';
 
 interface AppState {
   // Filters

@@ -5,7 +5,7 @@ export default function SearchInput() {
   const setFilters = useAppStore((s) => s.setFilters);
   const searchQuery = useAppStore((s) => s.filters.searchQuery);
   const [local, setLocal] = useState(searchQuery);
-  const timer = useRef<ReturnType<typeof setTimeout>>();
+  const timer = useRef<ReturnType<typeof setTimeout>>(undefined);
 
   useEffect(() => {
     timer.current = setTimeout(() => {
